@@ -6,7 +6,9 @@ import 'package:user_articles/domain/repositories/articles_repository.dart';
 part 'articles_state.dart';
 
 class ArticlesCubit extends Cubit<ArticlesState> {
-  ArticlesCubit({required this.articlesRepository}) : super(ArticlesState());
+  ArticlesCubit({
+    required this.articlesRepository,
+  }) : super(ArticlesState());
 
   final ArticlesRepository articlesRepository;
 
